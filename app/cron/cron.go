@@ -1,4 +1,4 @@
-package main
+package cron
 
 import (
 	"github.com/robfig/cron/v3"
@@ -8,7 +8,7 @@ import (
 /**
  项目Cron事务管理
  */
-func main(){
+func Start(){
 	log.Println("Starting...")
 	c := cron.New(cron.WithSeconds())
 

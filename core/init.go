@@ -15,12 +15,16 @@ func InitFrameWork() {
 
 	app.ConfigureHost(func(h *iris.Supervisor) {
 		h.RegisterOnShutdown(func() {
-			println("server terminated")
+			CallEvent(EventNameOnShutDown)
+		})
+		h.RegisterOnError(func(err error){
+			log.Println("http on error")
+			log.Println(err.Error())
 		})
 	})
-
 }
 func StartListen() {
+	CallEvent(EventNameBeforeStartListen)
 	S_Iris.Listen(":8080");
 }
 

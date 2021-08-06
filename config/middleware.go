@@ -2,6 +2,7 @@ package config
 
 import (
 	"github.com/kataras/iris/v12"
+	"main/app/event"
 	"main/core"
 )
 
@@ -9,6 +10,7 @@ import (
 // 注入中间件事件
 func Middleware(){
 	core.S_Iris.Use(myMiddleware);
+	core.S_Iris.Use(event.OnAfterRequest)
 }
 
 
