@@ -1,8 +1,8 @@
 package app
 
 import (
-	"main/app/event"
 	"main/app/utils"
+	"main/config"
 	"main/core"
 )
 
@@ -14,6 +14,6 @@ func Init(){
 }
 
 func LoadDefaultEvent(){
-	core.RegisterEvent(core.EventNameBeforeStartListen, event.OnBeforeStartListen)
-	core.RegisterEvent(core.EventNameOnShutDown, event.OnShutDown)
+	core.RegisterEvent(core.EventNameBeforeStartListen, config.OnBeforeStartListen)
+	core.RegisterEvent(core.EventNameOnShutDown, config.OnShutDown)
 }

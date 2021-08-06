@@ -1,4 +1,4 @@
-package event
+package config
 
 import (
 	"github.com/kataras/iris/v12"
