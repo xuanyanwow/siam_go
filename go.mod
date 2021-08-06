@@ -3,6 +3,7 @@ module main
 go 1.16
 
 require (
+	github.com/Jeffail/tunny v0.1.4 // indirect
 	github.com/ajg/form v1.5.1 // indirect
 	github.com/astaxie/beego v1.12.3
 	github.com/google/go-querystring v1.1.0 // indirect
