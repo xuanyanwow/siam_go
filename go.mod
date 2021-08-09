@@ -3,13 +3,16 @@ module main
 go 1.16
 
 require (
-	github.com/Jeffail/tunny v0.1.4 // indirect
 	github.com/ajg/form v1.5.1 // indirect
 	github.com/astaxie/beego v1.12.3
+	github.com/gomodule/redigo v2.0.0+incompatible
 	github.com/google/go-querystring v1.1.0 // indirect
+	github.com/gorilla/websocket v1.4.1 // indirect
 	github.com/imkira/go-interpol v1.1.0 // indirect
 	github.com/kataras/iris/v12 v12.1.8
+	github.com/kataras/neffos v0.0.14
 	github.com/moul/http2curl v1.0.0 // indirect
+	github.com/nats-io/nats-server/v2 v2.3.4 // indirect
 	github.com/robfig/cron/v3 v3.0.0
 	github.com/sergi/go-diff v1.2.0 // indirect
 	github.com/shurcooL/sanitized_anchor_name v1.0.0 // indirect
